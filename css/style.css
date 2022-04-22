@@ -1,0 +1,150 @@
+/* reset css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #222;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+button{
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+/* theme css */
+
+
+
+header{
+    width: 100%;
+    height: auto;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  header h1{
+      color: #fff;
+  }
+  
+
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+
+  }
+  .ajouter {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: #cc3333;
+    color: #fff;
+    border: none;
+    border-radius: .3rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+
+
+  .supprimerToutesLesNotes{
+    position: fixed;
+    top: 2rem;
+    right: 15rem;
+    background-color: #c78a2f;
+    color: #fff;
+    border: none;
+    border-radius: .3rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+
+  .ajouter:active, .supprimerToutesLesNotes:active {
+    transform: scale(0.90);
+  }
+  
+  .note {
+    background-color: #fff;
+    box-shadow: 0 0 1rem .4rem rgba(0, 0, 0, 0.1);
+    margin: 3rem 2rem;
+    height: 30rem;
+    width: 30rem;
+    
+  }
+  
+  .note .outils {
+    background-color: #cc3333;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+  }
+  
+  .note .outils button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+  }
+  
+  .note textarea {
+    font-family: inherit;
+    font-size: 1.6rem;
+    border: none;
+    height: 20rem;
+    width: 100%;
+    padding: 2rem;
+    border-radius: .3rem;
+    resize: none;
+
+  }
+  
+  .main {
+    padding: 2rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+
+  @media screen and (max-width:50rem) {
+    .ajouter{
+        top: .5rem;
+        right: .5rem;
+      }
+      .supprimerToutesLesNotes{
+        top: .5rem;
+        right: 15rem;
+      }
+       
+  }
